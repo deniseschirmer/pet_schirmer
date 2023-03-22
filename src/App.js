@@ -1,10 +1,10 @@
 import Layout from "./components/Layout";
 import { Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import PageOne from "./pages/PageOne";
-import PageTwo from "./pages/PageTwo";
-import PageThree from "./pages/PageThree";
-import PageCTA from "./pages/PageCTA";
+import Banhoetosa from "./pages/Banhoetosa";
+import Consultorio from "./pages/consultorio";
+import Contato from "./pages/Contato";
+// import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,17 +13,17 @@ function App() {
         <Route path="/" exact>
           <Home />
         </Route>
-        <Route path="/page-one">
-          <PageOne />
+        <Route path="/Home">
+          <Home />
         </Route>
-        <Route path="/page-two">
-          <PageTwo />
+        <Route path="/Banhoetosa">
+          <Banhoetosa />
         </Route>
-        <Route path="/page-three">
-          <PageThree />
+        <Route path="/Consultorio">
+          <Consultorio />
         </Route>
-        <Route path="/page-cta">
-          <PageCTA />
+        <Route path="/Contato">
+          <Contato />
         </Route>
       </Switch>
     </Layout>

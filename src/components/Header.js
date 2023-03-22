@@ -6,6 +6,8 @@ import { AiOutlineClose } from "react-icons/ai";
 import classes from "./Header.module.scss";
 import { Link, useHistory } from "react-router-dom";
 
+import logo from "../assets/foto.png";
+
 const Header = () => {
   const history = useHistory();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -38,15 +40,12 @@ const Header = () => {
 
   const ctaClickHandler = () => {
     menuToggleHandler();
-    history.push("/page-cta");
+    history.push("/Contato");
   };
 
   return (
     <header className={classes.header}>
       <div className={classes.header__content}>
-        <Link to="/" className={classes.header__content__logo}>
-          navbar
-        </Link>
         <nav
           className={`${classes.header__content__nav} ${
             menuOpen && size.width < 768 ? classes.isMenu : ""
@@ -54,22 +53,25 @@ const Header = () => {
         >
           <ul>
             <li>
-              <Link to="/page-one" onClick={menuToggleHandler}>
-                PageOne
+              <Link to="/Home" onClick={menuToggleHandler}>
+                Home
               </Link>
             </li>
             <li>
-              <Link to="/page-two" onClick={menuToggleHandler}>
-                PageTwo
+              <Link to="/Banhoetosa" onClick={menuToggleHandler}>
+                Banho e Tosa
               </Link>
             </li>
+            <Link to="/" className={classes.header__content__logo}>
+              <img src={logo} alt="logo" width={"80px"} />
+            </Link>
             <li>
-              <Link to="/page-three" onClick={menuToggleHandler}>
-                PageThree
+              <Link to="/consultorio" onClick={menuToggleHandler}>
+                Consultório
               </Link>
             </li>
           </ul>
-          <button onClick={ctaClickHandler}>CTA Page</button>
+          <button onClick={ctaClickHandler}>Contato</button>
         </nav>
         <div className={classes.header__content__toggle}>
           {!menuOpen ? (
