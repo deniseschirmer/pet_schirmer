@@ -15,5 +15,7 @@
   img-home {
     background-position: center top;
     background-size: cover;
+    z-index: 10;
+    max-width: 1080px;
   }
 }

@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import Banhoetosa from "./pages/Banhoetosa";
 import Consultorio from "./pages/consultorio";
 import Contato from "./pages/Contato";
-// import Footer from "./components/Footer";
 
 function App() {
   return (
