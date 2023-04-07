@@ -3,7 +3,7 @@
 ## Demo 📸
 
 <div align="center">
-   <img src="./github/.png" alt="demo-mobile" height="425">
+   <img src="" alt="demo-mobile" height="425">
 </div> 
  ---
 
@@ -18,7 +18,6 @@ Em construção
 #### As seguintes ferramentas foram usadas na construção do projeto:
 
 - [React](https://pt-br.reactjs.org/)
-- [FIREBASE](https://firebase.google.com/?hl=pt)
 - [SASS](https://sass-lang.com/documentation/)
 - [BEM](https://en.bem.info/methodology/)
 

@@ -12,10 +12,10 @@
     background: linear-gradient(220deg, $primary, rgba($primary, 0.5));
     border-radius: $borderRadius calc(#{$borderRadius} * 10);
   }
-  img-home {
+  .img-home {
     background-position: center top;
     background-size: cover;
     z-index: 10;
-    max-width: 1080px;
+    max-width: 1580px;
   }
 }

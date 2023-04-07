@@ -1,17 +1,24 @@
 import React from "react";
 import foto from "../assets/foto-principal.png";
-// import Home from "../Home.module.scss";
+import Footer from "../components/Footer";
+import styles from "./Home.module.scss";
 
 const Home = () => {
   return (
     <>
       <section>
         <img
-          className="img-home"
+          className={styles["img-home"]}
           src={foto}
           width={"1080px"}
           alt="Imagem de fundo"
         />
+        <div>
+          <h1 className="title">QUER FICAR LINDÃO?</h1>
+        </div>
+        <div>
+          <button className="btn">Agende já seu banho!</button>
+        </div>
       </section>
       <section>
         <h1>CUIDAR É A NOSSA ESPECIALIDADE</h1>
@@ -30,6 +37,7 @@ const Home = () => {
       <section>
         <h1>NOSSOS ASTROS PETS</h1>
       </section>
+      <Footer />
     </>
   );
 };
