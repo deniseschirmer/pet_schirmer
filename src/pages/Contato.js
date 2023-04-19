@@ -1,7 +1,7 @@
 // import { useEffect } from "react";
 // import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { useRef } from "react";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 
 const Contato = () => {
   const form = useRef();
@@ -15,22 +15,22 @@ const Contato = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_le5foa1",
-        "template_9fwisnj",
-        form.current,
-        "kZw17p1lmPyEjUfqJ"
-      )
-      .then(
-        () => {
-          alert("Message successfully sent!");
-          window.location.reload(false);
-        },
-        () => {
-          alert("Failed to send the message, please try again");
-        }
-      );
+    // emailjs
+    //   .sendForm(
+    //     "service_le5foa1",
+    //     "template_9fwisnj",
+    //     form.current,
+    //     "kZw17p1lmPyEjUfqJ"
+    //   )
+    //   .then(
+    //     () => {
+    //       alert("Message successfully sent!");
+    //       window.location.reload(false);
+    //     },
+    //     () => {
+    //       alert("Failed to send the message, please try again");
+    //     }
+    //   );
   };
   return (
     <>
@@ -67,7 +67,7 @@ const Contato = () => {
                   ></textarea>
                 </li>
                 <li>
-                  <input type="submit" className="flat-button" value="SEND" />
+                  <input type="submit" className="flat-button" value="ENVIAR" />
                 </li>
               </ul>
             </form>
