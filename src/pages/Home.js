@@ -1,34 +1,59 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { useState, useEffect, useRef } from "react";
-import foto from "../assets/foto-principal.png";
+
 import Footer from "../components/Footer";
+import foto from "../assets/foto-principal.png";
+// import Marie from "../assets/marie.jpg";
+// import Laila from "../assets/laila.jpg";
+// import Cindy from "../assets/cindy.jpg";
+
 import styles from "./Home.module.scss";
-import { motion } from "framer-motion";
-import Marie from "../assets/marie.jpg";
-
-import Laila from "../assets/laila.jpg";
-import Cindy from "../assets/cindy.jpg";
-
-const images = [Marie, Laila, Cindy];
+import { heroSlider } from "../data";
 
 const Home = () => {
-  const carousel = useRef();
-  const [width, setWidth] = useState(0);
+  // const carousel = useRef();
+  // const [width, setWidth] = useState(0);
+  // const images = [Marie, Laila, Cindy];
 
-  useEffect(() => {
-    console.log(carousel.current?.scrollWidth, carousel.current?.offsetWidth);
-    setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
-  }, []);
+  // useEffect(() => {
+  //   console.log(carousel.current?.scrollWidth, carousel.current?.offsetWidth);
+  //   setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
+  // }, []);
 
   return (
     <>
+      <Swiper>
+        {heroSlider.map((slide, index) => {
+          //destructure slide
+          const { title, subtitle, image, buttonText } = slide;
+          return (
+            <SwiperSlide className="py-12 lg:py-16" key={index}>
+              <div className="container mx-auto text-center lg:text-left">
+                <div className="flex flex-col justify-between ">
+                  {/* text*/}
+                  <div>
+                    <h1>{title}</h1>
+                    <p>{subtitle}</p>
+                    <button>{buttonText}</button>
+                  </div>
+                  {/* image */}
+                  <div>
+                    <img src={image.type} alt="" />
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
       <section>
-        <img
+        {/* <img
           className={styles["img-home"]}
           src={foto}
-          width={"1080px"}
+          // width={"1080px"}
           alt="Imagem de fundo"
-        />
+        /> */}
         <div>
           <h1 className="title">QUER FICAR LINDÃO?</h1>
         </div>
@@ -52,28 +77,7 @@ const Home = () => {
       </section>
       <section>
         <h1>NOSSOS ASTROS PETS</h1>
-        <div className="App">
-          <motion.div
-            ref={carousel}
-            className="carousel"
-            whileTap={{ cursor: "grabbing" }}
-          >
-            <motion.div
-              className="inner"
-              drag="x"
-              dragConstraints={{ right: 0, left: -width }}
-              initial={{ x: 100 }}
-              animate={{ x: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              {images.map((image) => (
-                <motion.div className="item" key={image}>
-                  <img src={image} alt="Texto alt" />
-                </motion.div>
-              ))}
-            </motion.div>
-          </motion.div>
-        </div>
+        <div className="App"></div>
       </section>
       <Footer />
     </>

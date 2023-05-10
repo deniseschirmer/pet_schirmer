@@ -1,7 +1,7 @@
 import Layout from "./components/Layout";
 import { Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Banhoetosa from "./pages/Banhoetosa";
+import BanhoTosa from "./pages/BanhoTosa";
 import Consultorio from "./pages/consultorio";
 import Contato from "./pages/Contato";
 
@@ -15,8 +15,8 @@ function App() {
         <Route path="/Home">
           <Home />
         </Route>
-        <Route path="/Banhoetosa">
-          <Banhoetosa />
+        <Route path="/Banhotosa">
+          <BanhoTosa />
         </Route>
         <Route path="/Consultorio">
           <Consultorio />
