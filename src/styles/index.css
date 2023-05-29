@@ -1,39 +1,16 @@
-/* // @import "./variables.scss";
+@import "./variables.scss";
 
-// * {
-//   box-sizing: border-box;
-//   margin: 0;
-// }
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 
-// body {
-//   width: 100%;
-//   font-family: $Poppins;
-//   color: var($dark-green);
-// }
+body {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark-green);
+}
 
-// #root {
-//   height: 100%;
-// } */
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  body {
-    @apply bg-body font-primary text-blue-secondary;
-  }
-  .h2 {
-    @apply text-2xl lg:text-4xl text-blue font-bold;
-  }
-  .btn,
-  .input-control {
-    @apply text-[15px] h-16 rounded-full outline-none;
-  }
-  .btn {
-    @apply px-8 font-medium text-white bg-orange hover:bg-orange-hover transition;
-  }
-  .input-control {
-    @apply w-full max-w-[514px] px-8 text-blue placeholder:text-blue-secondary;
-  }
+#root {
+  height: 100%;
 }

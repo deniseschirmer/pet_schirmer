@@ -1,16 +1,13 @@
-import { useEffect } from "react";
-// import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "./Contato.module.scss";
 
-const Contato = () => {
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useRef } from "react";
+
+export default function Contato() {
   const form = useRef();
-
-  useEffect(() => {
-    // return setTimeout(() => {
-    //   setLetterClass("text-animate-hover");
-    // }, 3000);
-  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -84,16 +81,14 @@ const Contato = () => {
           <span>petschirmer@hotmail.com</span>
         </div>
         <div className="map-wrap">
-          {/* <MapContainer center={[-25.5119069, -49.2973531, 13]} zoom={13}>
+          <MapContainer center={[-25.5119069, -49.2973531, 13]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[-25.5119069, -49.2973531, 13]}>
               <Popup>Denise lives here, come over for a cup of coffee :)</Popup>
             </Marker>
-          </MapContainer> */}
+          </MapContainer>
         </div>
       </div>
     </>
   );
-};
-
-export default Contato;
+}
