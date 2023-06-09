@@ -47,6 +47,30 @@ $ npm run dev
 
 ```
 
+
+## Componentes
+
+- [x] Layout
+- [x] Header
+- [x] Footer
+
+- [ ] price-list
+- [ ] service-banner
+- [ ] service-card
+- [ ] newsletter-box
+- [ ] pet-carrousel
+- [ ] box-comments
+
+
+## Páginas
+
+- [x] BanhoTosa
+- [x] Contato
+- [x] Home
+- [x] Serviço
+
+
+
 <a href="https://raw.githubusercontent.com/ARTHURPC03/Proffy-FullStack/master/github/linkedin.png">
 <img src="https://raw.githubusercontent.com/ARTHURPC03/Proffy-FullStack/master/github/linkedin.png" alt="LinkedIn" height="50"></a>
 <br />
