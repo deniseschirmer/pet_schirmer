@@ -1,6 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "./Contato.module.scss";
+import styles from "../styles/Contato.module.scss";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -31,7 +31,7 @@ export default function Contato() {
   };
   return (
     <>
-      <div className="container contact-page">
+      <div className={styles.container}>
         <div className="text-zone">
           <p>Contato</p>
           <div className="contact-form">

@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
+import { TbBrandFacebook } from "react-icons/tb";
 
-import classes from "./Header.module.scss";
+import classes from "../styles/Header.module.scss";
 import { Link, useHistory } from "react-router-dom";
 
 import logo from "../assets/foto.png";
@@ -46,11 +47,10 @@ const Header = () => {
   return (
     <header className={classes.header}>
       <div className={classes.header__content}>
-        <nav
-          className={`${classes.header__content__nav} ${
-            menuOpen && size.width < 768 ? classes.isMenu : ""
-          }`}
-        >
+        <Link to="/" className={classes.header__content__logo}>
+          <img src={logo} alt="logo" width={"80px"} />
+        </Link>
+        <nav className={classes.header__content__nav}>
           <ul>
             <li>
               <Link to="/Home" onClick={menuToggleHandler}>
@@ -62,16 +62,23 @@ const Header = () => {
                 Banho e Tosa
               </Link>
             </li>
-            <Link to="/" className={classes.header__content__logo}>
-              <img src={logo} alt="logo" width={"80px"} />
-            </Link>
+
             <li>
               <Link to="/consultorio" onClick={menuToggleHandler}>
                 Consultório
               </Link>
             </li>
+            <li>
+              <Link to="#" onClick={ctaClickHandler}>
+                Contato
+              </Link>
+            </li>
+            <li>
+              <Link to="#">
+                <TbBrandFacebook width={"25px"} />
+              </Link>
+            </li>
           </ul>
-          <button onClick={ctaClickHandler}>Contato</button>
         </nav>
         <div className={classes.header__content__toggle}>
           {!menuOpen ? (

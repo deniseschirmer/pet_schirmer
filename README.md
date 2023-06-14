@@ -15,7 +15,7 @@ Em construção
 
 ### 🛠 Tecnologias
 
-#### As seguintes ferramentas foram usadas na construção do projeto:
+#### As seguintes ferramentas estão sendo usadas na construção do projeto:
 
 - [React](https://pt-br.reactjs.org/)
 - [SASS](https://sass-lang.com/documentation/)
