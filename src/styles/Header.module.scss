@@ -135,3 +135,11 @@
     }
   }
 }
+.responsive-menu {
+  width: 200px;
+  height: calc(100% - $headerHeight);
+  position: absolute;
+  left: 0;
+  top: $headerHeight;
+  background-color: red;
+}
