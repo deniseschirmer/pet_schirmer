@@ -1,8 +1,8 @@
-import Layout from "./components/Layout";
 import { Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import BanhoTosa from "./pages/BanhoTosa";
-import Consultorio from "./pages/consultorio";
+import Layout from "./components/Layout";
+import Consultorio from "./pages/Consultorio";
 import Contato from "./pages/Contato";
 
 function App() {

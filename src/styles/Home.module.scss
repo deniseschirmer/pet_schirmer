@@ -1,0 +1,65 @@
+@import "./../styles/variables.scss";
+
+.img-home {
+  width: 100%;
+  object-fit: cover;
+  height: 524px;
+  position: relative;
+}
+
+.img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0 10%;
+  font-family: $Poppins;
+}
+.text-container {
+  position: absolute;
+  left: 12%;
+
+  h1 {
+    color: #141414;
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 800;
+    text-align: left;
+  }
+  button {
+    background-color: $dark-green;
+    border-radius: 20px;
+    color: $white;
+    width: 170px;
+    height: 44px;
+    border: none;
+  }
+}
+.sobre {
+  padding: 0 222px 0 222px;
+  margin-top: 56px;
+
+  .sobre-title {
+    color: $green;
+    font-family: $Nunito;
+    font-size: 18px;
+    line-height: 24.55px;
+    font-weight: 700;
+  }
+  .sobre-subtitle {
+    width: 554px;
+    font-family: $Nunito;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 43.65px;
+    color: #141414;
+  }
+  .sobre-text {
+    font-family: $Nunito;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #141414;
+  }
+}

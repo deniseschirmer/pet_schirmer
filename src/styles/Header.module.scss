@@ -1,13 +1,9 @@
 @import "./../styles/variables.scss";
 
 .header {
-  background: $dark-green;
   width: 100%;
   height: $headerHeight;
-  padding: 0 1.5rem;
-  @include breakpoint(md) {
-    padding: 0 3rem;
-  }
+  padding: 0 10%;
   transition: 0.3s ease all;
 
   &__content {
@@ -18,7 +14,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
     z-index: 100;
 
@@ -75,17 +71,19 @@
           }
           a {
             text-decoration: none;
-            color: inherit;
-            padding: 0.75rem 2.25rem;
+            color: $dark;
+            font-family: $Nunito;
+            font-weight: 600;
+            font-size: 0.8rem;
             border-radius: $borderRadius;
             transition: 0.3s ease all;
 
             &:hover {
-              background: rgba($light, 0.1);
+              background: rgba($brown, 0.1);
             }
             &:active {
               border-radius: calc(#{$borderRadius} + 6px);
-              background: linear-gradient(rgba($light, 0.1), rgba($light, 0.2));
+              background: linear-gradient(rgba($brown, 0.1), rgba($brown, 0.2));
             }
           }
         }
@@ -96,7 +94,7 @@
         padding: 0.75rem 1.25rem;
         border-radius: $borderRadius;
         font-size: 1rem;
-        font-family: inherit;
+        font-family: $Poppins;
         background: $white;
         color: $dark-green;
         border: 1px solid transparent;
