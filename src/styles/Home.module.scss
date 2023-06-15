@@ -36,3 +36,30 @@
     border: none;
   }
 }
+.sobre {
+  padding: 0 222px 0 222px;
+  margin-top: 56px;
+
+  .sobre-title {
+    color: $green;
+    font-family: $Nunito;
+    font-size: 18px;
+    line-height: 24.55px;
+    font-weight: 700;
+  }
+  .sobre-subtitle {
+    width: 554px;
+    font-family: $Nunito;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 43.65px;
+    color: #141414;
+  }
+  .sobre-text {
+    font-family: $Nunito;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #141414;
+  }
+}

@@ -30,17 +30,22 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
-        <h2>Sobre nós</h2>
-        <h3>Cuidamos do seu amiguinho com muito carinho!</h3>
-        <p>
-          Com mais de 12 anos de experiência, cuidamos do seu pet com carinho e
-          dedicação, oferecendo uma variedade de produtos e serviços de
-          qualidade. Nossa loja é um ambiente seguro, onde você pode se sentir
-          tranquilo ao trazer seu amiguinho de estimação. Conte conosco para
-          cuidar do seu pet e proporcionar uma experiência confiável e
-          satisfatória.
-        </p>
+      <section className={styles["sobre"]}>
+        <div>
+          <h2 className={styles["sobre-title"]}>Sobre nós</h2>
+          <h3 className={styles["sobre-subtitle"]}>
+            Cuidamos do seu amiguinho com muito carinho!
+          </h3>
+          <p className={styles["sobre-text"]}>
+            Com mais de 12 anos de experiência, cuidamos do seu pet com carinho
+            e dedicação, oferecendo uma variedade de produtos e serviços de
+            qualidade. Nossa loja é um ambiente seguro, onde você pode se sentir
+            tranquilo ao trazer seu amiguinho de estimação.
+            <br /> Conte conosco para cuidar do seu pet e proporcionar uma
+            experiência confiável e satisfatória.
+          </p>
+        </div>
+        <div></div>
       </section>
 
       <Footer />
