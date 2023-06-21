@@ -21,7 +21,7 @@
   left: 12%;
 
   h1 {
-    color: #141414;
+    color: $dark-text;
     font-size: 48px;
     line-height: 58px;
     font-weight: 800;
@@ -37,7 +37,7 @@
   }
 }
 .sobre {
-  padding: 0 222px 0 222px;
+  padding: 0 10%;
   margin-top: 56px;
 
   .sobre-title {
@@ -48,18 +48,18 @@
     font-weight: 700;
   }
   .sobre-subtitle {
-    width: 554px;
+    // width: 554px;
     font-family: $Nunito;
     font-weight: 800;
     font-size: 32px;
     line-height: 43.65px;
-    color: #141414;
+    color: $dark-text;
   }
   .sobre-text {
     font-family: $Nunito;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
-    color: #141414;
+    color: $dark-text;
   }
 }
